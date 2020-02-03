@@ -2,52 +2,132 @@ For GET https://www.googleapis.com/books/v1/volumes?q=Turing;
 
 Request Headers
 User-Agent: PostmanRuntime/7.22.0
+The request was using postman
+
 Accept: */*
+Accepts whatever data type
+
 Cache-Control: no-cache
+must check in with the server for the cache being valid
+
 Postman-Token: b4c31de1-93c2-49b0-a361-c442e612de0a
+the identity of the request
+
 Host: www.googleapis.com
+this is who we are sending the request to
+
 Accept-Encoding: gzip, deflate, br
+accepts gzip, deflate, and br encodings for the response
+
 Connection: keep-alive
+"new" requests to the site continue using the connection established here
 
 Response Headers
 Expires: Sun, 02 Feb 2020 23:44:07 GMT
+When this expires
+
 Date: Sun, 02 Feb 2020 23:44:07 GMT
+What time it was
+
 Cache-Control: private, max-age=0, must-revalidate, no-transform
+Don't share, must be fresh, must check in with the server to make sure it's okay, and no modification to the file
+
 ETag: "iPPser6Mov75mJUb_EktR4oB1SI/VbxjeJ1Zo354KiGeo0CzFTzvyGY"
+The tag of the response for unique identity
+
 Vary: Origin
+Something about changing the response body because of something, then check in with the origin server
+
 Vary: X-Origin
+Something about changing the response body in response to something, presumably about Cross-Site stuff
+
 Content-Type: application/json; charset=UTF-8
+We have json, and UTF-8 in what we are responding to the request with
+
 Content-Encoding: gzip
+we are encoding in gzip
+
 X-Content-Type-Options: nosniff
+don't guess types
+
 X-Frame-Options: SAMEORIGIN
+only display when it's on the same webpage, no cross site stuff
+
 X-XSS-Protection: 1; mode=block
+Prevent rendering of page if a cross site scripting is detected
+
 Server: GSE
+The server is Google Service Engine
+
 Alt-Svc: quic=":443"; ma=2592000; v="46,43",h3-Q050=":443"; ma=2592000,h3-Q049=":443"; ma=2592000,h3-Q048=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000
+Alternate ways of getting this service
+
 Transfer-Encoding: chunked
+We are splitting the data into chunks of data, instead of one big file
 
 For GET https://www.googleapis.com/books/v1/volumes/QnUPBAAAQBAJ
 
 Request Headers
 User-Agent: PostmanRuntime/7.22.0
+we sent this request with postman
+
 Accept: */*
+Accepting whatever file types the server wants to send
+
 Cache-Control: no-cache
+Must have server validation of the cache
+
 Postman-Token: 06f2b4d8-622d-4a81-86f8-cdd2113e0824
+identity of the request
+
 Host: www.googleapis.com
+who we are asking the request of
+
 Accept-Encoding: gzip, deflate, br
+we accept gzip, deflate, and br encoding
+
 Connection: keep-alive
+keep a connection open for new requests
 
 Response Headers
 Expires: Sun, 02 Feb 2020 23:44:22 GMT
+time of expiration
+
 Date: Sun, 02 Feb 2020 23:44:22 GMT
+time it was when requested
+
 Cache-Control: private, max-age=0, must-revalidate, no-transform
+Don't store in shared cache, must be fresh(within a millisecond), must check in with server, don't change the file
+
 ETag: "iPPser6Mov75mJUb_EktR4oB1SI/juMd5cGs7PSkgJKmjqMApt401fc"
+response identity
+
 Vary: Origin
+Something about changing the response body because of something, then check in with the origin server
+
 Vary: X-Origin
+Something about changing the response body in response to something, presumably about Cross-Site stuff
+
 Content-Type: application/json; charset=UTF-8
+has json and UTF-8 in the response body
+
 Content-Encoding: gzip
+encoded with gzip
+
 X-Content-Type-Options: nosniff
+don't guess types
+
 X-Frame-Options: SAMEORIGIN
+Must be accessed on the same server, no cross site
+
 X-XSS-Protection: 1; mode=block
+don't accept cross site scripting, if it's there, prevent page from loading
+
 Server: GSE
+Server is Google Service Engine
+
 Alt-Svc: quic=":443"; ma=2592000; v="46,43",h3-Q050=":443"; ma=2592000,h3-Q049=":443"; ma=2592000,h3-Q048=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000
+Other ways of getting the service
+
 Transfer-Encoding: chunked
+Sent in chunks, not one big file
